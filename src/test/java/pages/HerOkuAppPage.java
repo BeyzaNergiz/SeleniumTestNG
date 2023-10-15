@@ -23,4 +23,11 @@ public class HerOkuAppPage {
 
     @FindBy(linkText = "Elemental Selenium")
     public WebElement elementalLinki;
+
+    @FindBy(xpath = "(//input[@type='checkbox'])[1]")
+    public WebElement checkBox1;
+
+
+    @FindBy(xpath = "(//input[@type='checkbox'])[2]")
+    public WebElement checkBox2;
 }

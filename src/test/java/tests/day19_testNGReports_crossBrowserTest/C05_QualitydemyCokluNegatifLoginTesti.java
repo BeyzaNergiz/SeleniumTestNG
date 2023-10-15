@@ -15,20 +15,23 @@ public class C05_QualitydemyCokluNegatifLoginTesti {
     @DataProvider
     public static Object[][] gecersizKullaniciListesi() {
 
-        String[][] gecersizKullaniciBilgileri = new String[3][2];
+        String [][] gecersizKullaniciBilgileri = new String[3][2];
+        // String [][] gecersizKullaniciBilgileri = {{Yetis,12345},{Aysegul,45678},{Ayfer,78945}};
+
         Faker faker = new Faker();
 
-        for (int i = 0; i <gecersizKullaniciBilgileri.length ; i++) {
-
+        for (int i = 0; i < gecersizKullaniciBilgileri.length ; i++) {
             gecersizKullaniciBilgileri[i][0] = faker.internet().emailAddress();
             gecersizKullaniciBilgileri[i][1] = faker.internet().password();
 
         }
 
+
         return gecersizKullaniciBilgileri;
     }
 
     @Test(dataProvider = "gecersizKullaniciListesi")
+
     public void cokluNegatifTest(String username, String password){
         // qualitydemy anasayfaya gidin
         Driver.getDriver().get(ConfigReader.getProperty("qd1Url"));
@@ -38,7 +41,7 @@ public class C05_QualitydemyCokluNegatifLoginTesti {
         qualitydemyPage.ilkLoginLinki.click();
         qualitydemyPage.cookiesElementi.click();
         // verilen gecersiz kullanici adi ve sifreleri listesindeki
-        // 10 isim ve sifre icin giris yapilamadigini test edin
+        // 3 isim ve sifre icin giris yapilamadigini test edin
 
         qualitydemyPage.emailKutusu.sendKeys(username);
         qualitydemyPage.passwordKutusu.sendKeys(password);

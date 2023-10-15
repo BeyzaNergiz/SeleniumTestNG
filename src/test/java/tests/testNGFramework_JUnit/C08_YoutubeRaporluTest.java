@@ -26,6 +26,7 @@ public class C08_YoutubeRaporluTest extends TestBaseRapor {
         softAssert.assertEquals(actualTitle,expectedTitle,"Istenen baslik bulunamadi.");
         extentTest.pass("Title Youtube oldugunu test eder.");
 
+
         // ○ imageTest  => YouTube resminin görüntülendiğini (isDisplayed()) test edin
         YoutubePage youtubePage = new YoutubePage();
         softAssert.assertTrue(youtubePage.youtubeLogosu.isDisplayed());
@@ -45,6 +46,7 @@ public class C08_YoutubeRaporluTest extends TestBaseRapor {
 
         Driver.closeDriver();
         extentTest.info("sayfayi kapatir");
+
 
     }
 }
