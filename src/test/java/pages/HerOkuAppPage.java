@@ -30,4 +30,23 @@ public class HerOkuAppPage {
 
     @FindBy(xpath = "(//input[@type='checkbox'])[2]")
     public WebElement checkBox2;
+
+
+    @FindBy(xpath = "//*[text()='Click for JS Alert']")
+    public WebElement alert1Elementi;
+
+
+    @FindBy(xpath = "//*[text()='Click for JS Confirm']")
+    public WebElement alert2Elementi;
+
+
+    @FindBy(xpath = "//*[@id='result']")
+    public WebElement cancelYaziElementi;
+
+    @FindBy(xpath = "//*[text()='Click for JS Prompt']")
+    public WebElement alert3Elementi;
+
+    @FindBy(xpath = "//p[@style='color:green']")
+    public WebElement abdullahYaziElementi;
+
 }

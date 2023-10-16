@@ -22,6 +22,10 @@ public class YoutubePage {
 
     @FindBy(xpath = "(//div[@class='style-scope ytd-topbar-logo-renderer'])[1]")
     public WebElement ikinciSayfaYoutubeLogoElementi;
+
+    @FindBy(xpath = "(//div[@class='yt-spec-touch-feedback-shape__fill'])[16]")
+    public WebElement cookiesKabulElementi;
+
 }
 
 
