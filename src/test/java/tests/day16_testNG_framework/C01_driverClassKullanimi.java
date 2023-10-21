@@ -28,4 +28,12 @@ public class C01_driverClassKullanimi {
 
         Driver.closeDriver();
     }
+    @Test
+    public void googleTest(){
+
+        //amazon'a gidelim
+        Driver.getDriver().get("https://www.google.com");
+
+    }
+
 }

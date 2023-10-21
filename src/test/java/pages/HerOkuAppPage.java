@@ -49,4 +49,25 @@ public class HerOkuAppPage {
     @FindBy(xpath = "//p[@style='color:green']")
     public WebElement abdullahYaziElementi;
 
+    @FindBy(tagName = "h3")
+    public WebElement iframeYaziElementi;
+
+    @FindBy(id = "mce_0_ifr")
+    public WebElement ilkiframeElementi;
+
+    @FindBy(tagName = "p")
+    public WebElement textBoxKutuElementi;
+
+    @FindBy(linkText = "Elemental Selenium")
+    public WebElement elementalSeleniumYaziElementi;
+
+    @FindBy(tagName = "h3")
+    public WebElement openingBaslikElementi;
+
+    @FindBy(linkText = "Click Here")
+    public WebElement clickElementi;
+
+    @FindBy(tagName = "h3")
+    public WebElement newWindowElementi;
+
 }
